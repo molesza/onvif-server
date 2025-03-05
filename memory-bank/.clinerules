@@ -1,0 +1,82 @@
+# Cline Rules for Virtual Onvif Server
+
+## Project Patterns
+
+1. **Configuration Structure**: The project uses a specific YAML configuration structure for defining virtual Onvif devices. Each device configuration includes:
+   - MAC address for the virtual network interface
+   - Port configurations (server, RTSP, snapshot)
+   - Device name and UUID
+   - High and low quality stream configurations
+   - Target device information
+
+2. **Error Handling**: The project includes specific error handling for common Onvif issues, particularly time synchronization problems. When encountering "Wsse authorized time check failed" errors, the code attempts to adjust the time offset and retry.
+
+3. **Network Interface Detection**: The code uses `os.networkInterfaces()` to find the IP address associated with a specific MAC address, which is critical for binding the virtual Onvif servers to the correct interfaces.
+
+4. **SOAP Service Implementation**: The project uses the soap library's `soap.listen()` method to create SOAP services, with handlers defined as methods in the onvif object structure.
+
+5. **TCP Proxy Creation**: For each virtual device, TCP proxies are created to forward RTSP and HTTP traffic from the virtual device to the original source.
+
+## Implementation Paths
+
+1. **Configuration Creation**:
+   ```
+   User input → config-builder.js → YAML configuration
+   ```
+
+2. **Server Startup**:
+   ```
+   YAML configuration → main.js → onvif-server.js → TCP proxies
+   ```
+
+3. **Client Request Handling**:
+   ```
+   WS-Discovery → Device Service → Media Service → Stream URI → TCP Proxy → Original Device
+   ```
+
+## Known Challenges
+
+1. **Virtual Network Setup**: Creating and managing virtual network interfaces is the most complex part of the setup process for users. This requires root privileges and specific network configuration knowledge.
+
+2. **Time Synchronization**: Onvif devices are sensitive to time differences, and authentication can fail if the time is not synchronized between the client, virtual server, and original device.
+
+3. **Multiple Stream Handling**: Some camera systems limit the number of concurrent RTSP streams, which can cause issues when multiple clients connect to the virtual devices.
+
+4. **Docker Networking**: When using Docker, special consideration is needed for network configuration to ensure the container can properly handle virtual interfaces and network discovery.
+
+## Project-Specific Patterns
+
+1. **Device Identification**: The project uses a combination of MAC address, IP address, and UUID for device identification:
+   - MAC address: Used for network interface binding
+   - IP address: Derived from the MAC address for service endpoints
+   - UUID: Used in WS-Discovery responses
+
+2. **Profile Management**: The code defines two standard profiles for each device:
+   - MainStream: High-quality stream with higher resolution and bitrate
+   - SubStream: Low-quality stream with lower resolution and bitrate
+
+3. **Configuration Generation**: When generating configurations from existing Onvif devices, the code attempts to identify the best streams to use for high and low quality based on resolution and quality settings.
+
+## Tool Usage Patterns
+
+1. **Node.js**: The project is designed to run with Node.js v16 or higher, with no build process required.
+
+2. **Network Tools**: The project relies on Linux network configuration tools like `ip link` for creating virtual interfaces.
+
+3. **Docker**: The project includes Docker support with a specific pattern for mounting the configuration file.
+
+## Evolution of Project Decisions
+
+1. **YAML vs. JSON**: The project initially used JSON for configuration but switched to YAML for better readability and support for complex nested structures.
+
+2. **Fixed Dependencies**: The project uses fixed dependency versions to ensure consistent behavior across different environments.
+
+3. **Snapshot Handling**: The project includes a default snapshot image for devices that don't provide snapshot URLs, ensuring compatibility with clients that expect snapshot support.
+
+## User Preferences
+
+1. **Configuration Clarity**: Users prefer clear, well-documented configuration examples over automated but opaque configuration generation.
+
+2. **Deployment Flexibility**: Users appreciate having both direct Node.js deployment and Docker options.
+
+3. **Troubleshooting Guidance**: The README includes specific troubleshooting steps for common issues, which users find particularly helpful.
