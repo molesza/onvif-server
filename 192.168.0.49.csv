@@ -1,0 +1,22 @@
+Channel,RTSP URL,Status,Image File,Overlay Text,Resolution,Codec,FPS
+1,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=1&subtype=0,✅ Working,nvr_192.168.0.49/channel_1.jpg,CHEESE FRIDGE,960x1080,hevc,100.00
+2,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=2&subtype=0,✅ Working,nvr_192.168.0.49/channel_2.jpg,BAKERY CAKES DISPLAY,960x576,hevc,100.00
+3,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=3&subtype=0,✅ Working,nvr_192.168.0.49/channel_3.jpg,DAIRY FRIDGE,960x1080,hevc,100.00
+4,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=4&subtype=0,✅ Working,nvr_192.168.0.49/channel_4.jpg,DELI CHILLER,960x1080,hevc,100.00
+5,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=5&subtype=0,✅ Working,nvr_192.168.0.49/channel_5.jpg,BAKERY STOCKROOM,960x1080,hevc,100.00
+6,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=6&subtype=0,✅ Working,nvr_192.168.0.49/channel_6.jpg,BAKERY FREEZER,960x1080,hevc,100.00
+7,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=7&subtype=0,✅ Working,nvr_192.168.0.49/channel_7.jpg,BAKERY COLD ROOM,960x1080,hevc,100.00
+8,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=8&subtype=0,✅ Working,nvr_192.168.0.49/channel_8.jpg,DAIRY FRUIT VEG,960x1080,hevc,100.00
+9,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=9&subtype=0,✅ Working,nvr_192.168.0.49/channel_9.jpg,AISLE 8 FRONT CAMERA,960x1080,hevc,100.00
+10,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=10&subtype=0,✅ Working,nvr_192.168.0.49/channel_10.jpg,Deli Freezer,960x1080,hevc,100.00
+11,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=11&subtype=0,✅ Working,nvr_192.168.0.49/channel_11.jpg,I can't see the text in the image.,960x1080,hevc,100.00
+12,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=12&subtype=0,✅ Working,nvr_192.168.0.49/channel_12.jpg,Butchery Storeroom,960x1080,hevc,100.00
+13,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=13&subtype=0,✅ Working,nvr_192.168.0.49/channel_13.jpg,Channel 1,960x1080,hevc,100.00
+14,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=14&subtype=0,✅ Working,nvr_192.168.0.49/channel_14.jpg,Bakery Oven #1 Bold,960x1080,hevc,100.00
+15,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=15&subtype=0,✅ Working,nvr_192.168.0.49/channel_15.jpg,SPARE,960x1080,hevc,100.00
+16,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=16&subtype=0,✅ Working,nvr_192.168.0.49/channel_16.jpg,SPARE,960x1080,hevc,100.00
+17,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=17&subtype=0,❌ Not Found,N/A,N/A,0x55,N/A,N/A
+18,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=18&subtype=0,❌ Not Found,N/A,N/A,0x55,N/A,N/A
+19,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=19&subtype=0,❌ Not Found,N/A,N/A,0x55,N/A,N/A
+20,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=20&subtype=0,❌ Not Found,N/A,N/A,0x5650674698,N/A,N/A
+21,rtsp://admin:Nespnp@123@192.168.0.49:554/cam/realmonitor?channel=21&subtype=0,❌ Not Found,N/A,N/A,0x5648,N/A,N/A

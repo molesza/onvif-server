@@ -1,0 +1,464 @@
+onvif:
+  - mac: a2:a2:a2:a2:a5:a1
+    ports:
+      server: 8129
+      rtsp: 8650
+      snapshot: 8651
+    name: Dell Prep
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e490
+    highQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:a2
+    ports:
+      server: 8130
+      rtsp: 8652
+      snapshot: 8653
+    name: Bakery Counter Behind
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e491
+    highQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:a3
+    ports:
+      server: 8131
+      rtsp: 8654
+      snapshot: 8655
+    name: Gourmet Counter
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e492
+    highQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:a4
+    ports:
+      server: 8132
+      rtsp: 8656
+      snapshot: 8657
+    name: bakery
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e493
+    highQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:a5
+    ports:
+      server: 8133
+      rtsp: 8658
+      snapshot: 8659
+    name: Deli Service
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e494
+    highQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:a6
+    ports:
+      server: 8134
+      rtsp: 8660
+      snapshot: 8661
+    name: Deli Chiller
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e495
+    highQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:a7
+    ports:
+      server: 8135
+      rtsp: 8662
+      snapshot: 8663
+    name: Butchery Receiving
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e496
+    highQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:a8
+    ports:
+      server: 8136
+      rtsp: 8664
+      snapshot: 8665
+    name: Bakery Overview
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e497
+    highQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:a9
+    ports:
+      server: 8137
+      rtsp: 8666
+      snapshot: 8667
+    name: Dairy Cheese Overview
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e498
+    highQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:b1
+    ports:
+      server: 8138
+      rtsp: 8668
+      snapshot: 8669
+    name: Deli Hot Foods
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e499
+    highQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:b2
+    ports:
+      server: 8139
+      rtsp: 8670
+      snapshot: 8671
+    name: Deli Salad Bar
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e500
+    highQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:b3
+    ports:
+      server: 8140
+      rtsp: 8672
+      snapshot: 8673
+    name: Butchery Prep
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e501
+    highQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:b4
+    ports:
+      server: 8141
+      rtsp: 8674
+      snapshot: 8675
+    name: Dell Prep 1
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e502
+    highQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:b5
+    ports:
+      server: 8142
+      rtsp: 8676
+      snapshot: 8677
+    name: Poultry Fridge
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e503
+    highQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:b6
+    ports:
+      server: 8143
+      rtsp: 8678
+      snapshot: 8679
+    name: Butchery Prep Overview
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e504
+    highQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a5:b7
+    ports:
+      server: 8144
+      rtsp: 8680
+      snapshot: 8681
+    name: Bakery Packing
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e505
+    highQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 554
+        snapshot: 80

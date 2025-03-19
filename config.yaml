@@ -1,0 +1,3707 @@
+onvif:
+  - mac: a2:a2:a2:a2:a8:a1
+    ports:
+      server: 8177
+      rtsp: 8746
+      snapshot: 8747
+    name: BACK-UP-CHILLER-BACK-OVERVIEW
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e550
+    highQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=0
+      width: 960
+      height: 576
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:a2
+    ports:
+      server: 8178
+      rtsp: 8748
+      snapshot: 8749
+    name: RECEIVING-CAGE-EXIT-GATE
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e551
+    highQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=0
+      width: 960
+      height: 576
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:a3
+    ports:
+      server: 8179
+      rtsp: 8812
+      snapshot: 8751
+    name: BACK-UP-FREEZER-OVERVIEW
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e552
+    highQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=0
+      width: 960
+      height: 576
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:a4
+    ports:
+      server: 8180
+      rtsp: 8812
+      snapshot: 8753
+    name: FRUIT VEG RECEIVING
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e553
+    highQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:a5
+    ports:
+      server: 8181
+      rtsp: 8844
+      snapshot: 8755
+    name: RECEIVING-MIDDLE-AISLE
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e554
+    highQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:a6
+    ports:
+      server: 8182
+      rtsp: 8812
+      snapshot: 8757
+    name: RECEIVING-CAGE
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e555
+    highQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:a7
+    ports:
+      server: 8183
+      rtsp: 8828
+      snapshot: 8759
+    name: BD-01-RECEIVING-COMPUTER-VIEW
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e556
+    highQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:a8
+    ports:
+      server: 8184
+      rtsp: 8844
+      snapshot: 8761
+    name: PASSAGE TO BACK-UP CHILLER
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e557
+    highQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=0
+      width: 960
+      height: 576
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:a9
+    ports:
+      server: 8185
+      rtsp: 8860
+      snapshot: 8763
+    name: SIDE OVERVIEW OF RECEIVING CAGE
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e558
+    highQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:b1
+    ports:
+      server: 8186
+      rtsp: 8812
+      snapshot: 8765
+    name: RECEIVING-MID-AISLE-BACK VIEW
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e559
+    highQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:b2
+    ports:
+      server: 8187
+      rtsp: 8820
+      snapshot: 8767
+    name: AISLE-1-RECEIVING-BACK-VIEW
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e560
+    highQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:b3
+    ports:
+      server: 8188
+      rtsp: 8828
+      snapshot: 8769
+    name: RECEIVING ROLLER DOOR
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e561
+    highQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:b4
+    ports:
+      server: 8189
+      rtsp: 8836
+      snapshot: 8771
+    name: Staff Entrance
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e562
+    highQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=0
+      width: 960
+      height: 576
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:b5
+    ports:
+      server: 8190
+      rtsp: 8844
+      snapshot: 8773
+    name: Parking store Passage
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e563
+    highQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:b6
+    ports:
+      server: 8191
+      rtsp: 8852
+      snapshot: 8775
+    name: Receiving Labels
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e564
+    highQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a8:b7
+    ports:
+      server: 8192
+      rtsp: 8860
+      snapshot: 8777
+    name: Water Plant
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e565
+    highQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=0
+      width: 960
+      height: 576
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a1
+    ports:
+      server: 8193
+      rtsp: 8868
+      snapshot: 8779
+    name: Receiving Overview
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e566
+    highQuality:
+      rtsp: /cam/realmonitor?channel=17&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=17&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=17&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=17&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a2
+    ports:
+      server: 8194
+      rtsp: 8812
+      snapshot: 8781
+    name: Back up Freezer Back
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e567
+    highQuality:
+      rtsp: /cam/realmonitor?channel=18&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=18&subtype=0
+      width: 960
+      height: 576
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=18&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=18&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a3
+    ports:
+      server: 8195
+      rtsp: 8816
+      snapshot: 8783
+    name: Isle 6 Back
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e568
+    highQuality:
+      rtsp: /cam/realmonitor?channel=19&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=19&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=19&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=19&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a4
+    ports:
+      server: 8196
+      rtsp: 8820
+      snapshot: 8785
+    name: Isle Ice Cream
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e569
+    highQuality:
+      rtsp: /cam/realmonitor?channel=20&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=20&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=20&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=20&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a5
+    ports:
+      server: 8197
+      rtsp: 8824
+      snapshot: 8787
+    name: Isle 8 Back
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e570
+    highQuality:
+      rtsp: /cam/realmonitor?channel=21&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=21&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=21&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=21&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a6
+    ports:
+      server: 8198
+      rtsp: 8828
+      snapshot: 8789
+    name: Isle 7 Back
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e571
+    highQuality:
+      rtsp: /cam/realmonitor?channel=22&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=22&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=22&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=22&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a7
+    ports:
+      server: 8199
+      rtsp: 8832
+      snapshot: 8791
+    name: Isle 3 Back
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e572
+    highQuality:
+      rtsp: /cam/realmonitor?channel=23&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=23&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=23&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=23&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a8
+    ports:
+      server: 8200
+      rtsp: 8836
+      snapshot: 8793
+    name: Isle 1 Back
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e573
+    highQuality:
+      rtsp: /cam/realmonitor?channel=24&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=24&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=24&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=24&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:a9
+    ports:
+      server: 8201
+      rtsp: 8840
+      snapshot: 8795
+    name: Butchery Receiving Overview
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e574
+    highQuality:
+      rtsp: /cam/realmonitor?channel=25&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=25&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=25&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=25&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:b1
+    ports:
+      server: 8202
+      rtsp: 8844
+      snapshot: 8797
+    name: Butchery Receiving
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e575
+    highQuality:
+      rtsp: /cam/realmonitor?channel=26&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=26&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=26&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=26&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:b2
+    ports:
+      server: 8203
+      rtsp: 8848
+      snapshot: 8799
+    name: Receiving Yard Gate
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e576
+    highQuality:
+      rtsp: /cam/realmonitor?channel=27&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=27&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=27&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=27&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:b3
+    ports:
+      server: 8204
+      rtsp: 8852
+      snapshot: 8801
+    name: Butchery Island
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e577
+    highQuality:
+      rtsp: /cam/realmonitor?channel=28&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=28&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=28&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=28&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:b4
+    ports:
+      server: 8205
+      rtsp: 8856
+      snapshot: 8803
+    name: Butchery Chiller
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e578
+    highQuality:
+      rtsp: /cam/realmonitor?channel=29&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=29&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=29&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=29&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:b5
+    ports:
+      server: 8206
+      rtsp: 8860
+      snapshot: 8805
+    name: Canteen
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e579
+    highQuality:
+      rtsp: /cam/realmonitor?channel=30&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=30&subtype=0
+      width: 960
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=30&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=30&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:b6
+    ports:
+      server: 8207
+      rtsp: 8864
+      snapshot: 8807
+    name: Locker Room Front
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e580
+    highQuality:
+      rtsp: /cam/realmonitor?channel=31&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=31&subtype=0
+      width: 1280
+      height: 720
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=31&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=31&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+
+  - mac: a2:a2:a2:a2:a9:b7
+    ports:
+      server: 8208
+      rtsp: 8868
+      snapshot: 8809
+    name: Locker Room Back
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e581
+    highQuality:
+      rtsp: /cam/realmonitor?channel=32&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=32&subtype=0
+      width: 1280
+      height: 720
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=32&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=32&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.163
+      ports:
+        rtsp: 8812
+        snapshot: 9000
+  - mac: a2:a2:a2:a2:a2:a1
+    ports:
+      server: 8001
+      rtsp: 8554
+      snapshot: 8580
+    name: Liquor Str Back Entrance Passage
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e430
+    highQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:a2
+    ports:
+      server: 8002
+      rtsp: 8556
+      snapshot: 8582
+    name: Liquor Store Main Chiller
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e431
+    highQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:a3
+    ports:
+      server: 8003
+      rtsp: 8558
+      snapshot: 8584
+    name: Liquor Wine Section
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e432
+    highQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:a4
+    ports:
+      server: 8004
+      rtsp: 8560
+      snapshot: 8586
+    name: Liquor Receiving
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e433
+    highQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:a5
+    ports:
+      server: 8005
+      rtsp: 8562
+      snapshot: 8588
+    name: Liquor Tillpoint Overview
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e434
+    highQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:a6
+    ports:
+      server: 8006
+      rtsp: 8564
+      snapshot: 8590
+    name: Liquor Tillpoint Side View
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e435
+    highQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:a7
+    ports:
+      server: 8007
+      rtsp: 8566
+      snapshot: 8592
+    name: Liquor Side Fridge Bck View
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e436
+    highQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:a8
+    ports:
+      server: 8008
+      rtsp: 8568
+      snapshot: 8594
+    name: Liquor Main Chiller Bck Overvi
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e437
+    highQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:a9
+    ports:
+      server: 8009
+      rtsp: 8570
+      snapshot: 8596
+    name: Liquor Cooldrinks, Glassware et
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e438
+    highQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:b1
+    ports:
+      server: 8010
+      rtsp: 8572
+      snapshot: 8598
+    name: Liquor Rum, Vodka etc
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e439
+    highQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:b2
+    ports:
+      server: 8011
+      rtsp: 8574
+      snapshot: 8600
+    name: Outside Storeroom Passage 2
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e440
+    highQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:b3
+    ports:
+      server: 8012
+      rtsp: 8576
+      snapshot: 8602
+    name: Outside Storeroom Passage 1
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e441
+    highQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:b4
+    ports:
+      server: 8013
+      rtsp: 8578
+      snapshot: 8604
+    name: PARKING BACK OVERVIEW
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e442
+    highQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:b5
+    ports:
+      server: 8014
+      rtsp: 8580
+      snapshot: 8606
+    name: Outside Storeroom Passage 3
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e443
+    highQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:b6
+    ports:
+      server: 8015
+      rtsp: 8582
+      snapshot: 8608
+    name: OUTSIDE STOREROOM 1 A
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e444
+    highQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+
+  - mac: a2:a2:a2:a2:a2:b7
+    ports:
+      server: 8016
+      rtsp: 8584
+      snapshot: 8610
+    name: OUTSIDE STOREROOM 2 A
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e445
+    highQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.207
+      ports:
+        rtsp: 8872
+        snapshot: 9062
+  - mac: a2:a2:a2:a2:a3:a1
+    ports:
+      server: 8017
+      rtsp: 8586
+      snapshot: 8612
+    name: Camera-01-192.168.0.49
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e446
+    highQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:a2
+    ports:
+      server: 8018
+      rtsp: 8588
+      snapshot: 8614
+    name: Camera-02-192.168.0.49
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e447
+    highQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:a3
+    ports:
+      server: 8019
+      rtsp: 8590
+      snapshot: 8616
+    name: Camera-03-192.168.0.49
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e448
+    highQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:a4
+    ports:
+      server: 8020
+      rtsp: 8592
+      snapshot: 8618
+    name: Camera-04-192.168.0.49
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e449
+    highQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:a5
+    ports:
+      server: 8021
+      rtsp: 8594
+      snapshot: 8620
+    name: Camera-05-192.168.0.49
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e450
+    highQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:a6
+    ports:
+      server: 8022
+      rtsp: 8596
+      snapshot: 8622
+    name: Camera-06-192.168.0.49
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e451
+    highQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:a7
+    ports:
+      server: 8023
+      rtsp: 8598
+      snapshot: 8624
+    name: Camera-07-192.168.0.49
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e452
+    highQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:a8
+    ports:
+      server: 8024
+      rtsp: 8600
+      snapshot: 8626
+    name: Camera-08-192.168.0.49
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e453
+    highQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:a9
+    ports:
+      server: 8025
+      rtsp: 8602
+      snapshot: 8628
+    name: Camera-09-192.168.0.49
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e454
+    highQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:b1
+    ports:
+      server: 8026
+      rtsp: 8604
+      snapshot: 8630
+    name: Camera-10-192.168.0.49
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e455
+    highQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:b2
+    ports:
+      server: 8027
+      rtsp: 8606
+      snapshot: 8632
+    name: Camera-11-192.168.0.49
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e456
+    highQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:b3
+    ports:
+      server: 8028
+      rtsp: 8608
+      snapshot: 8634
+    name: Camera-12-192.168.0.49
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e457
+    highQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:b4
+    ports:
+      server: 8029
+      rtsp: 8610
+      snapshot: 8636
+    name: Camera-13-192.168.0.49
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e458
+    highQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:b5
+    ports:
+      server: 8030
+      rtsp: 8612
+      snapshot: 8638
+    name: Camera-14-192.168.0.49
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e459
+    highQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:b6
+    ports:
+      server: 8031
+      rtsp: 8614
+      snapshot: 8640
+    name: Camera-15-192.168.0.49
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e460
+    highQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+
+  - mac: a2:a2:a2:a2:a3:b7
+    ports:
+      server: 8032
+      rtsp: 8616
+      snapshot: 8642
+    name: Camera-16-192.168.0.49
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e461
+    highQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 8904
+        snapshot: 9094
+  - mac: a2:a2:a2:a2:a4:a1
+    ports:
+      server: 8113
+      rtsp: 8618
+      snapshot: 8619
+    name: Clothing Back
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e470
+    highQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:a2
+    ports:
+      server: 8114
+      rtsp: 8620
+      snapshot: 8621
+    name: Clothing Change room
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e471
+    highQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:a3
+    ports:
+      server: 8115
+      rtsp: 8622
+      snapshot: 8623
+    name: isle no.2 back
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e472
+    highQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:a4
+    ports:
+      server: 8116
+      rtsp: 8624
+      snapshot: 8625
+    name: HABA 3
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e473
+    highQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:a5
+    ports:
+      server: 8117
+      rtsp: 8626
+      snapshot: 8627
+    name: HABA Back
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e474
+    highQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:a6
+    ports:
+      server: 8118
+      rtsp: 8628
+      snapshot: 8629
+    name: Coldrinks Fridge
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e475
+    highQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:a7
+    ports:
+      server: 8119
+      rtsp: 8630
+      snapshot: 8631
+    name: HABA 4
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e476
+    highQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:a8
+    ports:
+      server: 8120
+      rtsp: 8632
+      snapshot: 8633
+    name: Clothing Middle
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e477
+    highQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:a9
+    ports:
+      server: 8121
+      rtsp: 8634
+      snapshot: 8635
+    name: Aisle 4 Back
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e478
+    highQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:b1
+    ports:
+      server: 8122
+      rtsp: 8636
+      snapshot: 8637
+    name: Magazines
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e479
+    highQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:b2
+    ports:
+      server: 8123
+      rtsp: 8638
+      snapshot: 8639
+    name: Aisle 5 Back
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e480
+    highQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:b3
+    ports:
+      server: 8124
+      rtsp: 8640
+      snapshot: 8641
+    name: Clothing Ladies
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e481
+    highQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:b4
+    ports:
+      server: 8125
+      rtsp: 8642
+      snapshot: 8643
+    name: HABA 1
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e482
+    highQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=0
+      width: 1280
+      height: 720
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:b5
+    ports:
+      server: 8126
+      rtsp: 8644
+      snapshot: 8645
+    name: HABA 2
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e483
+    highQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:b6
+    ports:
+      server: 8127
+      rtsp: 8646
+      snapshot: 8647
+    name: HABA Overview
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e484
+    highQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+
+  - mac: a2:a2:a2:a2:a4:b7
+    ports:
+      server: 8128
+      rtsp: 8648
+      snapshot: 8649
+    name: HABA Back Overview
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e485
+    highQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.63
+      ports:
+        rtsp: 8936
+        snapshot: 9126
+  - mac: a2:a2:a2:a2:a5:a1
+    ports:
+      server: 8129
+      rtsp: 8650
+      snapshot: 8651
+    name: Dell Prep
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e490
+    highQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:a2
+    ports:
+      server: 8130
+      rtsp: 8652
+      snapshot: 8653
+    name: Bakery Counter Behind
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e491
+    highQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:a3
+    ports:
+      server: 8131
+      rtsp: 8654
+      snapshot: 8655
+    name: Gourmet Counter
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e492
+    highQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:a4
+    ports:
+      server: 8132
+      rtsp: 8656
+      snapshot: 8657
+    name: bakery
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e493
+    highQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:a5
+    ports:
+      server: 8133
+      rtsp: 8658
+      snapshot: 8659
+    name: Deli Service
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e494
+    highQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:a6
+    ports:
+      server: 8134
+      rtsp: 8660
+      snapshot: 8661
+    name: Deli Chiller
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e495
+    highQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:a7
+    ports:
+      server: 8135
+      rtsp: 8662
+      snapshot: 8663
+    name: Butchery Receiving
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e496
+    highQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:a8
+    ports:
+      server: 8136
+      rtsp: 8664
+      snapshot: 8665
+    name: Bakery Overview
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e497
+    highQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:a9
+    ports:
+      server: 8137
+      rtsp: 8666
+      snapshot: 8667
+    name: Dairy Cheese Overview
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e498
+    highQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:b1
+    ports:
+      server: 8138
+      rtsp: 8668
+      snapshot: 8669
+    name: Deli Hot Foods
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e499
+    highQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:b2
+    ports:
+      server: 8139
+      rtsp: 8670
+      snapshot: 8671
+    name: Deli Salad Bar
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e500
+    highQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:b3
+    ports:
+      server: 8140
+      rtsp: 8672
+      snapshot: 8673
+    name: Butchery Prep
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e501
+    highQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 7
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=1
+      width: 640
+      height: 360
+      framerate: 7
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:b4
+    ports:
+      server: 8141
+      rtsp: 8674
+      snapshot: 8675
+    name: Dell Prep 1
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e502
+    highQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=0
+      width: 960
+      height: 576
+      framerate: 25
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:b5
+    ports:
+      server: 8142
+      rtsp: 8676
+      snapshot: 8677
+    name: Poultry Fridge
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e503
+    highQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:b6
+    ports:
+      server: 8143
+      rtsp: 8678
+      snapshot: 8679
+    name: Butchery Prep Overview
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e504
+    highQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+
+  - mac: a2:a2:a2:a2:a5:b7
+    ports:
+      server: 8144
+      rtsp: 8680
+      snapshot: 8681
+    name: Bakery Packing
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e505
+    highQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.79
+      ports:
+        rtsp: 8968
+        snapshot: 9158
+  - mac: a2:a2:a2:a2:a6:a1
+    ports:
+      server: 8145
+      rtsp: 8682
+      snapshot: 8683
+    name: Front Door left view
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e510
+    highQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:a2
+    ports:
+      server: 8146
+      rtsp: 8684
+      snapshot: 8685
+    name: Money Counter overview
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e511
+    highQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:a3
+    ports:
+      server: 8147
+      rtsp: 8686
+      snapshot: 8687
+    name: APPLes DisPlAy wth banana
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e512
+    highQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:a4
+    ports:
+      server: 8148
+      rtsp: 8688
+      snapshot: 8689
+    name: Cam 4
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e513
+    highQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=0
+      width: 1280
+      height: 1440
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:a5
+    ports:
+      server: 8149
+      rtsp: 8690
+      snapshot: 8691
+    name: Inside Left Overview Tills
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e514
+    highQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:a6
+    ports:
+      server: 8150
+      rtsp: 8692
+      snapshot: 8693
+    name: Inside Right Overview Tills
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e515
+    highQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:a7
+    ports:
+      server: 8151
+      rtsp: 8694
+      snapshot: 8695
+    name: Front Overview Of Money C
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e516
+    highQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:a8
+    ports:
+      server: 8152
+      rtsp: 8696
+      snapshot: 8697
+    name: STOREROOM 2 C
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e517
+    highQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:a9
+    ports:
+      server: 8153
+      rtsp: 8698
+      snapshot: 8699
+    name: Outside Exit overview
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e518
+    highQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:b1
+    ports:
+      server: 8154
+      rtsp: 8700
+      snapshot: 8701
+    name: STOREROOM 2 B
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e519
+    highQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:b2
+    ports:
+      server: 8155
+      rtsp: 8702
+      snapshot: 8703
+    name: Green Pepper Display
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e520
+    highQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:b3
+    ports:
+      server: 8156
+      rtsp: 8704
+      snapshot: 8705
+    name: Outside Entrance Overview
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e521
+    highQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:b4
+    ports:
+      server: 8157
+      rtsp: 8706
+      snapshot: 8707
+    name: Inside Exit Overview
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e522
+    highQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:b5
+    ports:
+      server: 8158
+      rtsp: 8708
+      snapshot: 8709
+    name: Outside Left Overview Tills
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e523
+    highQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:b6
+    ports:
+      server: 8159
+      rtsp: 8710
+      snapshot: 8711
+    name: ShopFloor To Receiving En
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e524
+    highQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=0
+      width: 1280
+      height: 1440
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a6:b7
+    ports:
+      server: 8160
+      rtsp: 8712
+      snapshot: 8713
+    name: Cashiers Desk
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e525
+    highQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a1
+    ports:
+      server: 8161
+      rtsp: 8714
+      snapshot: 8715
+    name: Cash Office Stairs
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e526
+    highQuality:
+      rtsp: /cam/realmonitor?channel=17&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=17&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=17&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=17&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a2
+    ports:
+      server: 8162
+      rtsp: 8716
+      snapshot: 8717
+    name: Cash Office Security Gate
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e527
+    highQuality:
+      rtsp: /cam/realmonitor?channel=18&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=18&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=18&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=18&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a3
+    ports:
+      server: 8163
+      rtsp: 8718
+      snapshot: 8719
+    name: Corner of Parking Overview
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e528
+    highQuality:
+      rtsp: /cam/realmonitor?channel=19&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=19&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=19&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=19&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a4
+    ports:
+      server: 8164
+      rtsp: 8720
+      snapshot: 8721
+    name: Aisle No. 3 Front
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e529
+    highQuality:
+      rtsp: /cam/realmonitor?channel=20&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=20&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=20&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=20&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a5
+    ports:
+      server: 8165
+      rtsp: 8722
+      snapshot: 8723
+    name: Aisle No. 4 Front
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e530
+    highQuality:
+      rtsp: /cam/realmonitor?channel=21&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=21&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=21&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=21&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a6
+    ports:
+      server: 8166
+      rtsp: 8724
+      snapshot: 8725
+    name: Aisle No. 2 Front
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e531
+    highQuality:
+      rtsp: /cam/realmonitor?channel=22&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=22&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=22&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=22&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a7
+    ports:
+      server: 8167
+      rtsp: 8726
+      snapshot: 8727
+    name: STOREROOM 2D
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e532
+    highQuality:
+      rtsp: /cam/realmonitor?channel=23&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=23&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=23&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=23&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a8
+    ports:
+      server: 8168
+      rtsp: 8728
+      snapshot: 8729
+    name: Aisle No. 6 Front
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e533
+    highQuality:
+      rtsp: /cam/realmonitor?channel=24&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=24&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=24&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=24&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:a9
+    ports:
+      server: 8169
+      rtsp: 8730
+      snapshot: 8731
+    name: Aisle No.5 Front
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e534
+    highQuality:
+      rtsp: /cam/realmonitor?channel=25&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=25&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=25&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=25&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:b1
+    ports:
+      server: 8170
+      rtsp: 8732
+      snapshot: 8733
+    name: Aisle No.1 Front
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e535
+    highQuality:
+      rtsp: /cam/realmonitor?channel=26&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=26&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=26&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=26&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:b2
+    ports:
+      server: 8171
+      rtsp: 8734
+      snapshot: 8735
+    name: Aisle No. 7 Front
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e536
+    highQuality:
+      rtsp: /cam/realmonitor?channel=27&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=27&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=27&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=27&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:b3
+    ports:
+      server: 8172
+      rtsp: 8736
+      snapshot: 8737
+    name: STOREROOM 1 B
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e537
+    highQuality:
+      rtsp: /cam/realmonitor?channel=28&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=28&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=28&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=28&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:b4
+    ports:
+      server: 8173
+      rtsp: 8738
+      snapshot: 8739
+    name: Cash Office
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e538
+    highQuality:
+      rtsp: /cam/realmonitor?channel=29&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=29&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=29&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=29&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:b5
+    ports:
+      server: 8174
+      rtsp: 8740
+      snapshot: 8741
+    name: Roof Top 1 (Liquor)
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e539
+    highQuality:
+      rtsp: /cam/realmonitor?channel=30&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=30&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=30&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=30&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:b6
+    ports:
+      server: 8175
+      rtsp: 8742
+      snapshot: 8743
+    name: Roof 2
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e540
+    highQuality:
+      rtsp: /cam/realmonitor?channel=31&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=31&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=31&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=31&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190
+
+  - mac: a2:a2:a2:a2:a7:b7
+    ports:
+      server: 8176
+      rtsp: 8744
+      snapshot: 8745
+    name: Cash Connect safe
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e541
+    highQuality:
+      rtsp: /cam/realmonitor?channel=32&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=32&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 30
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=32&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=32&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.96
+      ports:
+        rtsp: 9000
+        snapshot: 9190

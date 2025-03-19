@@ -1,0 +1,464 @@
+onvif:
+  - mac: a2:a2:a2:a2:a3:a1
+    ports:
+      server: 8017
+      rtsp: 8586
+      snapshot: 8612
+    name: Camera-01-192.168.0.49
+    uuid: 15b21259-77d9-441f-9913-3ccd8a82e446
+    highQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=1&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:a2
+    ports:
+      server: 8018
+      rtsp: 8588
+      snapshot: 8614
+    name: Camera-02-192.168.0.49
+    uuid: 25b21259-77d9-441f-9913-3ccd8a82e447
+    highQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=2&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=2&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:a3
+    ports:
+      server: 8019
+      rtsp: 8590
+      snapshot: 8616
+    name: Camera-03-192.168.0.49
+    uuid: 35b21259-77d9-441f-9913-3ccd8a82e448
+    highQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=3&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:a4
+    ports:
+      server: 8020
+      rtsp: 8592
+      snapshot: 8618
+    name: Camera-04-192.168.0.49
+    uuid: 45b21259-77d9-441f-9913-3ccd8a82e449
+    highQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=4&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:a5
+    ports:
+      server: 8021
+      rtsp: 8594
+      snapshot: 8620
+    name: Camera-05-192.168.0.49
+    uuid: 55b21259-77d9-441f-9913-3ccd8a82e450
+    highQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=5&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=5&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:a6
+    ports:
+      server: 8022
+      rtsp: 8596
+      snapshot: 8622
+    name: Camera-06-192.168.0.49
+    uuid: 65b21259-77d9-441f-9913-3ccd8a82e451
+    highQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=6&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=6&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:a7
+    ports:
+      server: 8023
+      rtsp: 8598
+      snapshot: 8624
+    name: Camera-07-192.168.0.49
+    uuid: 75b21259-77d9-441f-9913-3ccd8a82e452
+    highQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=7&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=7&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:a8
+    ports:
+      server: 8024
+      rtsp: 8600
+      snapshot: 8626
+    name: Camera-08-192.168.0.49
+    uuid: 85b21259-77d9-441f-9913-3ccd8a82e453
+    highQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=8&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=8&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:a9
+    ports:
+      server: 8025
+      rtsp: 8602
+      snapshot: 8628
+    name: Camera-09-192.168.0.49
+    uuid: 95b21259-77d9-441f-9913-3ccd8a82e454
+    highQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=9&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=9&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:b1
+    ports:
+      server: 8026
+      rtsp: 8604
+      snapshot: 8630
+    name: Camera-10-192.168.0.49
+    uuid: a5b21259-77d9-441f-9913-3ccd8a82e455
+    highQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=10&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=10&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:b2
+    ports:
+      server: 8027
+      rtsp: 8606
+      snapshot: 8632
+    name: Camera-11-192.168.0.49
+    uuid: b5b21259-77d9-441f-9913-3ccd8a82e456
+    highQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=11&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=11&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:b3
+    ports:
+      server: 8028
+      rtsp: 8608
+      snapshot: 8634
+    name: Camera-12-192.168.0.49
+    uuid: c5b21259-77d9-441f-9913-3ccd8a82e457
+    highQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=12&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=12&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:b4
+    ports:
+      server: 8029
+      rtsp: 8610
+      snapshot: 8636
+    name: Camera-13-192.168.0.49
+    uuid: d5b21259-77d9-441f-9913-3ccd8a82e458
+    highQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=13&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=13&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:b5
+    ports:
+      server: 8030
+      rtsp: 8612
+      snapshot: 8638
+    name: Camera-14-192.168.0.49
+    uuid: e5b21259-77d9-441f-9913-3ccd8a82e459
+    highQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=14&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=14&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:b6
+    ports:
+      server: 8031
+      rtsp: 8614
+      snapshot: 8640
+    name: Camera-15-192.168.0.49
+    uuid: f5b21259-77d9-441f-9913-3ccd8a82e460
+    highQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=15&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=15&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
+
+  - mac: a2:a2:a2:a2:a3:b7
+    ports:
+      server: 8032
+      rtsp: 8616
+      snapshot: 8642
+    name: Camera-16-192.168.0.49
+    uuid: g5b21259-77d9-441f-9913-3ccd8a82e461
+    highQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=0&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=0
+      width: 1920
+      height: 1080
+      framerate: 15
+      bitrate: 2048
+      quality: 4
+    lowQuality:
+      rtsp: /cam/realmonitor?channel=16&subtype=1&unicast=true&proto=Onvif
+      snapshot: /onvif/snapshot?channel=16&subtype=1
+      width: 640
+      height: 360
+      framerate: 15
+      bitrate: 512
+      quality: 1
+    target:
+      hostname: 192.168.0.49
+      ports:
+        rtsp: 554
+        snapshot: 80
