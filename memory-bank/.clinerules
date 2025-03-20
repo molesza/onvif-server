@@ -1,0 +1,104 @@
+# Virtual Onvif Server Project Rules and Patterns
+
+## Project Structure
+
+- **configs/**: Contains individual YAML configuration files for each NVR
+  - Naming convention: `192.168.0.X.yaml` where X is the NVR's IP address
+- **src/**: Contains the core source code
+  - `config-builder.js`: Handles configuration generation
+  - `onvif-server.js`: Core server implementation
+- **wsdl/**: Contains WSDL files for Onvif protocol
+- **resources/**: Contains static resources like images
+- **Imported Cameras/**: Contains CSV files with camera information
+
+## Configuration Patterns
+
+1. **NVR-based Organization**: Each NVR has its own configuration file
+2. **Camera Naming**: Camera names should be descriptive of location/function
+3. **Port Allocation**:
+   - Server ports: 8001-8999
+   - RTSP ports: 8554-9999
+   - Snapshot ports: 8580-9999
+4. **MAC Addresses**: Use locally administered MAC addresses (starting with a2:)
+5. **UUID Generation**: Use unique UUIDs for each camera
+
+## Workflow Patterns
+
+1. **Configuration Updates**:
+   - Edit individual NVR configuration files
+   - Run `./combine-configs.sh` to generate combined config
+   - Check logs for port conflict resolutions
+
+2. **System Startup**:
+   - Run `sudo ./setup-all-cameras.sh` to create virtual interfaces
+   - Run `./start-all-cameras.sh` to start the server
+   - Wait for all cameras to initialize
+
+3. **Troubleshooting**:
+   - Check for port conflicts in logs
+   - Verify virtual network interfaces
+   - Test individual camera streams with VLC
+   - Check Unifi Protect adoption status
+
+## Command Patterns
+
+1. **Create Virtual Network Interface**:
+   ```bash
+   sudo ip link add [NAME] link eth0 address [MAC_ADDRESS] type macvlan mode bridge
+   ```
+
+2. **Check Virtual Interfaces**:
+   ```bash
+   ip link show
+   ```
+
+3. **Test RTSP Stream**:
+   ```bash
+   vlc rtsp://[IP]:[PORT]/[PATH]
+   ```
+
+4. **Check Port Usage**:
+   ```bash
+   sudo netstat -tulpn | grep [PORT]
+   ```
+
+## User Preferences
+
+1. **Configuration Management**: Prefer separate files per NVR for better organization
+2. **Automation**: Automate repetitive tasks like port conflict resolution
+3. **Documentation**: Maintain detailed documentation for complex configurations
+4. **Testing**: Test changes incrementally rather than all at once
+5. **Backup**: Keep backups of working configurations before making changes
+
+## Critical Implementation Paths
+
+1. **Virtual Network Setup**: 
+   - Must be done before server startup
+   - Requires root privileges
+   - Virtual interfaces are lost on reboot
+
+2. **Configuration Combining**:
+   - Must resolve all port conflicts
+   - Should preserve camera names and identities
+   - Needs to handle all NVR configurations
+
+3. **Server Startup**:
+   - Uses combined configuration
+   - Initializes all virtual devices
+   - Creates all necessary proxies
+
+## Known Challenges
+
+1. **Port Conflicts**: Automatic resolution can change port assignments
+2. **Resource Usage**: High memory usage with many active cameras
+3. **Startup Time**: Long startup with many cameras
+4. **Interface Persistence**: Virtual interfaces don't persist across reboots
+5. **IP Address Management**: Requires many IP addresses
+
+## Evolution Notes
+
+1. **Initial Implementation**: Basic support for a single NVR
+2. **Multi-NVR Support**: Added support for multiple NVRs
+3. **Configuration Split**: Separated configurations by NVR
+4. **Port Conflict Resolution**: Added automatic port conflict handling
+5. **Startup Automation**: Created scripts for setup and startup
