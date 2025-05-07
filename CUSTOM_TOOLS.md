@@ -6,9 +6,10 @@ This document describes the custom tools and scripts created to enhance the func
 
 1. [Sequential Adoption Script](#sequential-adoption-script)
 2. [No-Broadcast Mode](#no-broadcast-mode)
-3. [MAC Address and YAML Configuration Tools](#mac-address-and-yaml-configuration-tools)
-4. [Usage Examples](#usage-examples)
-5. [Troubleshooting](#troubleshooting)
+3. [NVR Configuration Merger](#nvr-configuration-merger)
+4. [MAC Address and YAML Configuration Tools](#mac-address-and-yaml-configuration-tools)
+5. [Usage Examples](#usage-examples)
+6. [Troubleshooting](#troubleshooting)
 
 ## Sequential Adoption Script
 
@@ -71,6 +72,55 @@ When using the no-broadcast mode, you'll need to manually add each camera in you
 - Password: (Same as your physical camera/NVR)
 - ONVIF Path: /onvif/device_service
 
+## NVR Configuration Merger
+
+The NVR Configuration Merger (`merge-nvr-configs.js`) allows you to combine multiple NVR YAML configuration files into a single combined configuration file. This is useful when you have multiple NVRs and want to run them all from a single ONVIF server instance.
+
+### Features
+
+- Preserves existing camera configurations exactly as they are
+- Incrementally adds new cameras with adjusted ports and MAC addresses
+- Automatically resolves port conflicts
+- Uses a consistent naming convention (NVR*-CH*)
+- Maintains the same configuration structure
+
+### Usage
+
+```bash
+node merge-nvr-configs.js <combined-config.yaml> <new-config.yaml>
+```
+
+### How It Works
+
+1. For the first NVR (typically 192.168.6.201.yaml):
+   - Creates an exact copy as the combined configuration file
+   - Preserves all settings exactly as they are
+
+2. For subsequent NVRs:
+   - Reads the existing combined configuration
+   - Analyzes the highest port numbers and MAC addresses in use
+   - Adjusts the new cameras' configurations to avoid conflicts
+   - Adds the new cameras to the combined configuration
+
+3. The script ensures:
+   - Server ports are incremented sequentially
+   - RTSP and snapshot ports are incremented
+   - MAC addresses are unique
+   - Camera names follow the NVR*-CH* convention (e.g., NVR202-CH1)
+
+### Example
+
+```bash
+# First, create the combined config from the first NVR
+node merge-nvr-configs.js combined-nvr.yaml 192.168.6.201.yaml
+
+# Then add the second NVR
+node merge-nvr-configs.js combined-nvr.yaml 192.168.6.202.yaml
+
+# Add more NVRs as needed
+node merge-nvr-configs.js combined-nvr.yaml 192.168.6.204.yaml
+```
+
 ## MAC Address and YAML Configuration Tools
 
 ### MAC YAML Inserter
@@ -115,24 +165,37 @@ The `create_macvlan.sh` script creates virtual network interfaces with specific 
    sudo ./create_macvlan.sh 16 eth0
    ```
 
-2. Generate a configuration file:
+2. Generate a configuration file for each NVR:
    ```bash
    node main.js --create-config
+   # Enter NVR details (e.g., 192.168.6.201)
+   # Save as 192.168.6.201.yaml
+
+   node main.js --create-config
+   # Enter NVR details (e.g., 192.168.6.202)
+   # Save as 192.168.6.202.yaml
    ```
 
-3. Insert MAC addresses into the configuration:
+3. Insert MAC addresses into the configurations:
    ```bash
-   ./mac_yaml_inserter.sh config.yaml
+   ./mac_yaml_inserter.sh 192.168.6.201.yaml
+   ./mac_yaml_inserter.sh 192.168.6.202.yaml
    ```
 
-4. Adopt cameras sequentially without broadcasting:
+4. Create a combined configuration:
    ```bash
-   node sequential-adoption-no-broadcast.js config.yaml
+   node merge-nvr-configs.js combined-nvr.yaml 192.168.6.201.yaml
+   node merge-nvr-configs.js combined-nvr.yaml 192.168.6.202.yaml
    ```
 
-5. Run all cameras without broadcasting:
+5. Adopt cameras sequentially without broadcasting:
    ```bash
-   node main-no-broadcast.js config.yaml
+   node sequential-adoption-no-broadcast.js combined-nvr.yaml
+   ```
+
+6. Run all cameras without broadcasting:
+   ```bash
+   node main-no-broadcast.js combined-nvr.yaml
    ```
 
 ### Running with Discovery (Original Method)
