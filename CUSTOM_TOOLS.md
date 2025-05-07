@@ -147,22 +147,38 @@ The `mac_yaml_inserter.sh` script automatically inserts MAC addresses from your 
 - Replaces `<ONVIF PROXY MAC ADDRESS HERE>` placeholders in your YAML file
 - Creates a backup of your original file
 
-### Create MacVLAN Script
+### Create MacVLAN Scripts
+
+#### Basic MacVLAN Creation
 
 The `create_macvlan.sh` script creates virtual network interfaces with specific MAC addresses for your ONVIF cameras.
-
-#### Usage
 
 ```bash
 ./create_macvlan.sh <number_of_interfaces> [parent_interface]
 ```
 
-#### Features
-
+**Features:**
 - Creates the specified number of virtual interfaces
 - Assigns sequential MAC addresses (a2:a2:a2:a2:a2:01, a2:a2:a2:a2:a2:02, etc.)
 - Uses the specified parent interface (defaults to eth0)
 - Brings up the interfaces and assigns IP addresses
+
+**Note:** This script will overwrite any existing interfaces with the same names.
+
+#### Additional MacVLAN Creation
+
+The `create_additional_macvlan.sh` script creates additional virtual interfaces while preserving existing ones.
+
+```bash
+sudo ./create_additional_macvlan.sh
+```
+
+**Features:**
+- Preserves existing interfaces
+- Starts creating new interfaces from a specified index (e.g., 33)
+- Assigns sequential MAC addresses continuing from the last existing interface
+- Interactive prompts for network configuration
+- Handles MAC address generation for indices beyond 255
 
 ## Usage Examples
 
@@ -170,7 +186,12 @@ The `create_macvlan.sh` script creates virtual network interfaces with specific 
 
 1. Create virtual network interfaces:
    ```bash
+   # For initial setup (creates interfaces 1-16)
    sudo ./create_macvlan.sh 16 eth0
+
+   # To add more interfaces while preserving existing ones (e.g., adding interfaces 33-150)
+   sudo ./create_additional_macvlan.sh
+   # Then enter starting index 33 and number of interfaces 118
    ```
 
 2. Generate a configuration file for each NVR:
