@@ -25,8 +25,12 @@ The sequential adoption script (`sequential-adoption.js`) allows you to start ea
 ### Usage
 
 ```bash
-node sequential-adoption.js <config.yaml>
+node sequential-adoption.js <config.yaml> [start_index]
 ```
+
+Where:
+- `<config.yaml>`: Path to the configuration file
+- `[start_index]`: Optional camera index to start from (1-based, default: 1)
 
 ### How It Works
 
@@ -59,8 +63,12 @@ node main-no-broadcast.js <config.yaml>
 To run the sequential adoption process without broadcasting:
 
 ```bash
-node sequential-adoption-no-broadcast.js <config.yaml>
+node sequential-adoption-no-broadcast.js <config.yaml> [start_index]
 ```
+
+Where:
+- `<config.yaml>`: Path to the configuration file
+- `[start_index]`: Optional camera index to start from (1-based, default: 1)
 
 ### Manual Camera Addition
 
@@ -190,7 +198,11 @@ The `create_macvlan.sh` script creates virtual network interfaces with specific 
 
 5. Adopt cameras sequentially without broadcasting:
    ```bash
+   # Start from the beginning (camera 1)
    node sequential-adoption-no-broadcast.js combined-nvr.yaml
+
+   # Or start from a specific camera (e.g., camera 33)
+   node sequential-adoption-no-broadcast.js combined-nvr.yaml 33
    ```
 
 6. Run all cameras without broadcasting:

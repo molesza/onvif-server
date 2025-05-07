@@ -107,11 +107,24 @@ async function main() {
         // Check if config file is provided
         if (process.argv.length < 3) {
             console.error('Please provide a config file path');
-            console.error('Usage: node sequential-adoption.js <config.yaml>');
+            console.error('Usage: node sequential-adoption.js <config.yaml> [start_index]');
+            console.error('  <config.yaml>: Path to the configuration file');
+            console.error('  [start_index]: Optional camera index to start from (1-based, default: 1)');
             process.exit(1);
         }
 
         const configPath = process.argv[2];
+
+        // Parse starting index (default to 1 if not provided)
+        let startIndex = 1;
+        if (process.argv.length >= 4) {
+            const parsedIndex = parseInt(process.argv[3]);
+            if (!isNaN(parsedIndex) && parsedIndex >= 1) {
+                startIndex = parsedIndex;
+            } else {
+                console.error('Invalid start_index. Using default value of 1.');
+            }
+        }
 
         // Check if config file exists
         if (!fs.existsSync(configPath)) {
@@ -130,11 +143,22 @@ async function main() {
 
         console.log(`Found ${config.onvif.length} cameras in the configuration`);
 
+        // Adjust startIndex to be 0-based for array indexing
+        const startIndexZeroBased = startIndex - 1;
+
+        if (startIndexZeroBased >= config.onvif.length) {
+            console.error(`Error: Start index ${startIndex} is greater than the number of cameras (${config.onvif.length})`);
+            process.exit(1);
+        }
+
+        console.log(`Starting from camera ${startIndex} of ${config.onvif.length}`);
+
         // Ask user if they want to start the sequential adoption process
         const startAnswer = await askQuestion(
-            'This script will start each camera one by one for adoption.\n' +
-            'Make sure your virtual network interfaces are properly set up.\n' +
-            'Do you want to continue? (yes/no): '
+            `This script will start each camera one by one for adoption.\n` +
+            `Starting from camera ${startIndex} of ${config.onvif.length} (${config.onvif[startIndexZeroBased].name}).\n` +
+            `Make sure your virtual network interfaces are properly set up.\n` +
+            `Do you want to continue? (yes/no): `
         );
 
         if (startAnswer.toLowerCase() !== 'yes') {
@@ -142,8 +166,8 @@ async function main() {
             process.exit(0);
         }
 
-        // Process each camera sequentially
-        for (let i = 0; i < config.onvif.length; i++) {
+        // Process each camera sequentially, starting from the specified index
+        for (let i = startIndexZeroBased; i < config.onvif.length; i++) {
             const cameraConfig = config.onvif[i];
 
             // Check if MAC address is properly set
