@@ -1,0 +1,6 @@
+Channel,RTSP URL,Status,Image File,Overlay Text,Resolution,Codec,FPS,Bitrate,Quality,Source
+1,rtsp://admin:Nespnp@123@192.168.6.205:554/cam/realmonitor?channel=1&subtype=0,✅ Working,nvr_analyzer_192.168.6.205/channel_1.jpg,Clothing Back,1920x1080,h264,50,3072 kbps,Unknown,RTSP Stream Analysis
+2,rtsp://admin:Nespnp@123@192.168.6.205:554/cam/realmonitor?channel=2&subtype=0,✅ Working,nvr_analyzer_192.168.6.205/channel_2.jpg,Clothing Change room,1920x1080,h264,6,1536 kbps,Unknown,RTSP Stream Analysis
+3,rtsp://admin:Nespnp@123@192.168.6.205:554/cam/realmonitor?channel=3&subtype=0,✅ Working,nvr_analyzer_192.168.6.205/channel_3.jpg,isle no.2 back,1920x1080,h264,6,2048 kbps,Unknown,RTSP Stream Analysis
+4,rtsp://admin:Nespnp@123@192.168.6.205:554/cam/realmonitor?channel=4&subtype=0,✅ Working,nvr_analyzer_192.168.6.205/channel_4.jpg,HAB 3,1920x1080,h264,6,2048 kbps,Unknown,RTSP Stream Analysis
+5,rtsp://admin:Nespnp@123@192.168.6.205:554/cam/realmonitor?channel=5&subtype=0,✅ Working,nvr_analyzer_192.168.6.205/channel_5.jpg,HABA Back,1920x1080,h264,50,3072 kbps,Unknown,RTSP Stream Analysis

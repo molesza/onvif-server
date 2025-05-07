@@ -1,0 +1,6 @@
+==== NVR Analysis Log for 192.168.6.205 ====
+Timestamp: 2025-05-07 07:13:37
+Username: admin
+Port: 80
+
+Failed to login to NVR at 192.168.6.205

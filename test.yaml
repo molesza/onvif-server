@@ -1,0 +1,19 @@
+onvif:
+  - mac: a2:a2:a2:a2:a2:01
+    ports:
+      server: 8081
+      rtsp: 8554
+      snapshot: 8580
+    name: TestChannel1
+  - mac: a2:a2:a2:a2:a2:02
+    ports:
+      server: 8082
+      rtsp: 8554
+      snapshot: 8580
+    name: TestChannel2
+  - mac: a2:a2:a2:a2:a2:03
+    ports:
+      server: 8083
+      rtsp: 8554
+      snapshot: 8580
+    name: TestChannel3

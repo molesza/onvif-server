@@ -1,0 +1,22 @@
+Channel,RTSP URL,Status,Image File,Overlay Text,Resolution,Codec,FPS,Bitrate,Quality,Source
+1,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=1&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_1.jpg,CHEESE FRIDGE,960x1080,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+2,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=2&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_2.jpg,BAKERY CAKES DISPLAY,960x576,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+3,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=3&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_3.jpg,DAIRY FRIDGE,960x1080,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+4,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=4&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_4.jpg,DELI CHILLER,960x576,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+5,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=5&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_5.jpg,BAKERY STOCKROOM,960x576,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+6,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=6&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_6.jpg,BAKERY FREEZER,960x576,h264,25,36 kbps,Unknown,RTSP Stream Analysis
+7,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=7&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_7.jpg,BAKERY COLD ROOM,960x1080,h264,60,1024 kbps,Unknown,RTSP Stream Analysis
+8,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=8&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_8.jpg,DAIRY FRUIT VEG,960x1080,hevc,25,512 kbps,Unknown,RTSP Stream Analysis
+9,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=9&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_9.jpg,AISLE STEPHEN,960x1080,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+10,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=10&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_10.jpg,Deli Fresh,960x576,h264,25,256 kbps,Unknown,RTSP Stream Analysis
+11,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=11&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_11.jpg,Butt English,960x1080,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+12,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=12&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_12.jpg,Butchery Storeroom,960x576,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+13,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=13&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_13.jpg,Channel 13,960x1080,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+14,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=14&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_14.jpg,Bakery Overview Back,960x1080,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+15,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=15&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_15.jpg,SPARE,960x1080,h264,25,512 kbps,Unknown,RTSP Stream Analysis
+16,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=16&subtype=0,✅ Working,nvr_analyzer_192.168.6.202/channel_16.jpg,SPARE,960x576,h264,60,512 kbps,Unknown,RTSP Stream Analysis
+17,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=17&subtype=0,❌ Not Found,N/A,N/A,0x5,N/A,N/A,N/A,Unknown,None - All methods failed
+18,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=18&subtype=0,❌ Not Found,N/A,N/A,0x60,N/A,N/A,N/A,Unknown,None - All methods failed
+19,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=19&subtype=0,❌ Not Found,N/A,N/A,0x56,N/A,N/A,N/A,Unknown,None - All methods failed
+20,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=20&subtype=0,❌ Not Found,N/A,N/A,0x580,N/A,N/A,N/A,Unknown,None - All methods failed
+21,rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=21&subtype=0,❌ Not Found,N/A,N/A,0x55,N/A,N/A,N/A,Unknown,None - All methods failed

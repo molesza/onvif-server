@@ -1,0 +1,17 @@
+Channel,RTSP URL,Status,Image File,Overlay Text,Resolution,Codec,FPS,Bitrate,Quality,Source
+1,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=1&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_1.jpg,Liquor Str Bk Entrance Passage,1920x1080,h264,30,1536 kbps,Unknown,RTSP Stream Analysis
+2,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=2&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_2.jpg,Liquor Store Main Chiller,1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis
+3,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=3&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_3.jpg,Liquor Wine Section,1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis
+4,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=4&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_4.jpg,Liquor Receiving,1920x1080,h264,30,1536 kbps,Unknown,RTSP Stream Analysis
+5,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=5&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_5.jpg,Liquor Tillpoint Overview,1920x1080,h264,30,1536 kbps,Unknown,RTSP Stream Analysis
+6,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=6&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_6.jpg,Liquor Tillpoint Side View,1920x1080,h264,30,1536 kbps,Unknown,RTSP Stream Analysis
+7,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=7&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_7.jpg,Liquor Side Fridge Bck View,1920x1080,h264,30,1536 kbps,Unknown,RTSP Stream Analysis
+8,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=8&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_8.jpg,Liquor Main Chiller Bck Overview,1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis
+9,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=9&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_9.jpg,"Liquor Cooldrinks, Glassware et",1920x1080,h264,30,1536 kbps,Unknown,RTSP Stream Analysis
+10,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=10&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_10.jpg,"Liquor Rum, Vodka etc",1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis
+11,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=11&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_11.jpg,Outside Storeroom Passage 2,1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis
+12,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=12&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_12.jpg,Outside Storeroom Passage 1,1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis
+13,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=13&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_13.jpg,PARKING BACK OVERVIEW,1920x1080,h264,30,29 kbps,Unknown,RTSP Stream Analysis
+14,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=14&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_14.jpg,Outside Storeroom Passage 3,1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis
+15,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=15&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_15.jpg,OUTSIDE STOREROOM 1 A,1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis
+16,rtsp://admin:Nespnp@123@192.168.0.207:554/cam/realmonitor?channel=16&subtype=0,✅ Working,nvr_analyzer_192.168.0.207/channel_16.jpg,OUTSIDE STOREROOM 2 A,1920x1080,h264,30,2048 kbps,Unknown,RTSP Stream Analysis

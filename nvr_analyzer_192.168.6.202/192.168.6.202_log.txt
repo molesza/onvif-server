@@ -1,0 +1,164 @@
+==== NVR Analysis Log for 192.168.6.202 ====
+Timestamp: 2025-05-07 07:13:10
+Username: admin
+Port: 80
+
+Testing Channel 1...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=1&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_1.jpg
+STDERR: [swscaler @ 0x57e119f5bcc0] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x57e119f76e80] The specified filename 'nvr_analyzer_192.168.6.202/channel_1.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x57e119f76e80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 2...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=2&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_2.jpg
+STDERR: [swscaler @ 0x5bc999ce3480] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x5bc999af6d40] The specified filename 'nvr_analyzer_192.168.6.202/channel_2.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5bc999af6d40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 3...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=3&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_3.jpg
+STDERR: [swscaler @ 0x62ec97045a40] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x62ec97061e80] The specified filename 'nvr_analyzer_192.168.6.202/channel_3.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x62ec97061e80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 4...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=4&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_4.jpg
+STDERR: [swscaler @ 0x5b7799bfdfc0] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x5b77999a2d40] The specified filename 'nvr_analyzer_192.168.6.202/channel_4.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5b77999a2d40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 5...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=5&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_5.jpg
+STDERR: [swscaler @ 0x5b7af22b55c0] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x5b7af20e6e40] The specified filename 'nvr_analyzer_192.168.6.202/channel_5.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5b7af20e6e40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 6...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=6&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_6.jpg
+STDERR: [swscaler @ 0x5616e8c5a000] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x5616e8a2fd40] The specified filename 'nvr_analyzer_192.168.6.202/channel_6.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5616e8a2fd40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 7...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=7&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_7.jpg
+STDERR: [swscaler @ 0x6205ab5c75c0] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x6205ab35d9c0] The specified filename 'nvr_analyzer_192.168.6.202/channel_7.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x6205ab35d9c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 8...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=8&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_8.jpg
+STDERR: [swscaler @ 0x5faee62edb40] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x5faee62fcc00] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 2 times
+[image2 @ 0x5faee541b440] The specified filename 'nvr_analyzer_192.168.6.202/channel_8.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5faee541b440] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 9...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=9&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_9.jpg
+STDERR: [swscaler @ 0x557b7df2c300] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x557b7df48c00] The specified filename 'nvr_analyzer_192.168.6.202/channel_9.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x557b7df48c00] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 10...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=10&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_10.jpg
+STDERR: [swscaler @ 0x6190ddc10740] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x6190ddc2ce80] The specified filename 'nvr_analyzer_192.168.6.202/channel_10.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x6190ddc2ce80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 11...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=11&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_11.jpg
+STDERR: [swscaler @ 0x57845a3e6900] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x57845a5170c0] The specified filename 'nvr_analyzer_192.168.6.202/channel_11.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x57845a5170c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 12...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=12&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_12.jpg
+STDERR: [swscaler @ 0x5bf677b61540] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x5bf6778f9d40] The specified filename 'nvr_analyzer_192.168.6.202/channel_12.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5bf6778f9d40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 13...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=13&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_13.jpg
+STDERR: [swscaler @ 0x62ac26e28cc0] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x62ac26e44e80] The specified filename 'nvr_analyzer_192.168.6.202/channel_13.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x62ac26e44e80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 14...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=14&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_14.jpg
+STDERR: [swscaler @ 0x5e2608c57600] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x5e2608cb2a00] The specified filename 'nvr_analyzer_192.168.6.202/channel_14.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5e2608cb2a00] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 15...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=15&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_15.jpg
+STDERR: [swscaler @ 0x5c4080f95840] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x5c4080ff1000] The specified filename 'nvr_analyzer_192.168.6.202/channel_15.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5c4080ff1000] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 16...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=16&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_16.jpg
+STDERR: [swscaler @ 0x590836a39b00] deprecated pixel format used, make sure you did set range correctly
+[image2 @ 0x590836a9b5c0] The specified filename 'nvr_analyzer_192.168.6.202/channel_16.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x590836a9b5c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 17...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=17&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_17.jpg
+STDERR: [rtsp @ 0x5df8d7f4a840] method DESCRIBE failed: 404 Not Found
+[in#0 @ 0x5df8d7f4a740] Error opening input: Server returned 404 Not Found
+Error opening input file rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=17&subtype=0.
+Error opening input files: Server returned 404 Not Found
+
+❌ No image found for Channel 17
+Testing Channel 18...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=18&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_18.jpg
+STDERR: [rtsp @ 0x60f49084d840] method OPTIONS failed: 403 Forbidden
+[in#0 @ 0x60f49084d740] Error opening input: Server returned 403 Forbidden (access denied)
+Error opening input file rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=18&subtype=0.
+Error opening input files: Server returned 403 Forbidden (access denied)
+
+❌ No image found for Channel 18
+Testing Channel 19...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=19&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_19.jpg
+STDERR: [rtsp @ 0x56dc99491840] method OPTIONS failed: 403 Forbidden
+[in#0 @ 0x56dc99491740] Error opening input: Server returned 403 Forbidden (access denied)
+Error opening input file rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=19&subtype=0.
+Error opening input files: Server returned 403 Forbidden (access denied)
+
+❌ No image found for Channel 19
+Testing Channel 20...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=20&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_20.jpg
+STDERR: [rtsp @ 0x580bf5adc800] method OPTIONS failed: 403 Forbidden
+[in#0 @ 0x580bf5adc700] Error opening input: Server returned 403 Forbidden (access denied)
+Error opening input file rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=20&subtype=0.
+Error opening input files: Server returned 403 Forbidden (access denied)
+
+❌ No image found for Channel 20
+Testing Channel 21...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=21&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.202/channel_21.jpg
+STDERR: [rtsp @ 0x55b9af369840] method OPTIONS failed: 403 Forbidden
+[in#0 @ 0x55b9af369740] Error opening input: Server returned 403 Forbidden (access denied)
+Error opening input file rtsp://admin:Nespnp@123@192.168.6.202:554/cam/realmonitor?channel=21&subtype=0.
+Error opening input files: Server returned 403 Forbidden (access denied)
+
+❌ No image found for Channel 21

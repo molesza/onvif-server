@@ -1,0 +1,197 @@
+==== NVR Analysis Log for 192.168.6.204 ====
+Timestamp: 2025-05-07 07:13:31
+Username: admin
+Port: 80
+
+Testing Channel 1...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=1&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_1.jpg
+STDERR: [image2 @ 0x5b6f33a083c0] The specified filename 'nvr_analyzer_192.168.6.204/channel_1.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5b6f33a083c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 2...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=2&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_2.jpg
+STDERR: [image2 @ 0x59e4274c5640] The specified filename 'nvr_analyzer_192.168.6.204/channel_2.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x59e4274c5640] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 3...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=3&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_3.jpg
+STDERR: [image2 @ 0x622beb456ac0] The specified filename 'nvr_analyzer_192.168.6.204/channel_3.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x622beb456ac0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 4...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=4&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_4.jpg
+STDERR: [image2 @ 0x5ee9ca0f7800] The specified filename 'nvr_analyzer_192.168.6.204/channel_4.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5ee9ca0f7800] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 5...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=5&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_5.jpg
+STDERR: [image2 @ 0x650af8239ec0] The specified filename 'nvr_analyzer_192.168.6.204/channel_5.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x650af8239ec0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 6...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=6&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_6.jpg
+STDERR: [image2 @ 0x6195e8c9e4c0] The specified filename 'nvr_analyzer_192.168.6.204/channel_6.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x6195e8c9e4c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 7...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=7&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_7.jpg
+STDERR: [image2 @ 0x5d18d53e4100] The specified filename 'nvr_analyzer_192.168.6.204/channel_7.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5d18d53e4100] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 8...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=8&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_8.jpg
+STDERR: [image2 @ 0x5ae9ec30da40] The specified filename 'nvr_analyzer_192.168.6.204/channel_8.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5ae9ec30da40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 9...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=9&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_9.jpg
+STDERR: [image2 @ 0x586565bc23c0] The specified filename 'nvr_analyzer_192.168.6.204/channel_9.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x586565bc23c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 10...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=10&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_10.jpg
+STDERR: [image2 @ 0x60500fc20b40] The specified filename 'nvr_analyzer_192.168.6.204/channel_10.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x60500fc20b40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 11...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=11&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_11.jpg
+STDERR: [image2 @ 0x6385832f3940] The specified filename 'nvr_analyzer_192.168.6.204/channel_11.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x6385832f3940] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 12...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=12&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_12.jpg
+STDERR: [image2 @ 0x6068f1a47080] The specified filename 'nvr_analyzer_192.168.6.204/channel_12.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x6068f1a47080] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 13...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=13&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_13.jpg
+STDERR: [image2 @ 0x630745e7cbc0] The specified filename 'nvr_analyzer_192.168.6.204/channel_13.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x630745e7cbc0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 14...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=14&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_14.jpg
+STDERR: [image2 @ 0x5d81d4bd6680] The specified filename 'nvr_analyzer_192.168.6.204/channel_14.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5d81d4bd6680] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 15...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=15&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_15.jpg
+STDERR: [image2 @ 0x5ea0826a3d80] The specified filename 'nvr_analyzer_192.168.6.204/channel_15.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5ea0826a3d80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 16...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=16&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_16.jpg
+STDERR: [image2 @ 0x576eb287c380] The specified filename 'nvr_analyzer_192.168.6.204/channel_16.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x576eb287c380] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 17...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=17&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_17.jpg
+STDERR: [image2 @ 0x5c99099e7480] The specified filename 'nvr_analyzer_192.168.6.204/channel_17.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5c99099e7480] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 18...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=18&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_18.jpg
+STDERR: [image2 @ 0x56afabd9a2c0] The specified filename 'nvr_analyzer_192.168.6.204/channel_18.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x56afabd9a2c0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 19...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=19&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_19.jpg
+STDERR: [image2 @ 0x63b436ea6e80] The specified filename 'nvr_analyzer_192.168.6.204/channel_19.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x63b436ea6e80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 20...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=20&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_20.jpg
+STDERR: [image2 @ 0x64be623ccbc0] The specified filename 'nvr_analyzer_192.168.6.204/channel_20.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x64be623ccbc0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 21...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=21&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_21.jpg
+STDERR: [image2 @ 0x6056f2eccbc0] The specified filename 'nvr_analyzer_192.168.6.204/channel_21.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x6056f2eccbc0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 22...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=22&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_22.jpg
+STDERR: [image2 @ 0x63d3f887e940] The specified filename 'nvr_analyzer_192.168.6.204/channel_22.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x63d3f887e940] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 23...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=23&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_23.jpg
+STDERR: [image2 @ 0x6508966c9c40] The specified filename 'nvr_analyzer_192.168.6.204/channel_23.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x6508966c9c40] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 24...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=24&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_24.jpg
+STDERR: [image2 @ 0x60213f18b380] The specified filename 'nvr_analyzer_192.168.6.204/channel_24.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x60213f18b380] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 25...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=25&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_25.jpg
+STDERR: [image2 @ 0x580ef44c0d80] The specified filename 'nvr_analyzer_192.168.6.204/channel_25.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x580ef44c0d80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 26...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=26&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_26.jpg
+STDERR: [image2 @ 0x5d1756796980] The specified filename 'nvr_analyzer_192.168.6.204/channel_26.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5d1756796980] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 27...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=27&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_27.jpg
+STDERR: [image2 @ 0x653cb4913980] The specified filename 'nvr_analyzer_192.168.6.204/channel_27.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x653cb4913980] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 28...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=28&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_28.jpg
+STDERR: [image2 @ 0x5ab95b5c2980] The specified filename 'nvr_analyzer_192.168.6.204/channel_28.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x5ab95b5c2980] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 29...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=29&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_29.jpg
+STDERR: [image2 @ 0x57cabaf67e80] The specified filename 'nvr_analyzer_192.168.6.204/channel_29.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x57cabaf67e80] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 30...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=30&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_30.jpg
+STDERR: [image2 @ 0x601839af7bc0] The specified filename 'nvr_analyzer_192.168.6.204/channel_30.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x601839af7bc0] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 31...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=31&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_31.jpg
+STDERR: [image2 @ 0x61f3a9e90880] The specified filename 'nvr_analyzer_192.168.6.204/channel_31.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x61f3a9e90880] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+
+Testing Channel 32...
+RTSP URL: "rtsp://admin:Nespnp@123@192.168.6.204:554/cam/realmonitor?channel=32&subtype=0"
+Saving screenshot to: nvr_analyzer_192.168.6.204/channel_32.jpg
+STDERR: [image2 @ 0x575276946540] The specified filename 'nvr_analyzer_192.168.6.204/channel_32.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x575276946540] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.
+

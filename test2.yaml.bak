@@ -1,0 +1,19 @@
+onvif:
+  - mac: <ONVIF PROXY MAC ADDRESS HERE>
+    ports:
+      server: 8081
+      rtsp: 8554
+      snapshot: 8580
+    name: TestChannel1
+  - mac: <ONVIF PROXY MAC ADDRESS HERE>
+    ports:
+      server: 8082
+      rtsp: 8554
+      snapshot: 8580
+    name: TestChannel2
+  - mac: <ONVIF PROXY MAC ADDRESS HERE>
+    ports:
+      server: 8083
+      rtsp: 8554
+      snapshot: 8580
+    name: TestChannel3
