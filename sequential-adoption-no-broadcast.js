@@ -167,6 +167,14 @@ async function main() {
 
         console.log(`Found ${config.onvif.length} cameras in the configuration`);
 
+        // Adjust startIndex to be 0-based for array indexing
+        const startIndexZeroBased = startIndex - 1;
+
+        if (startIndexZeroBased >= config.onvif.length) {
+            console.error(`Error: Start index ${startIndex} is greater than the number of cameras (${config.onvif.length})`);
+            process.exit(1);
+        }
+
         // Ask user if they want to start the sequential adoption process
         const startAnswer = await askQuestion(
             `This script will start each camera one by one for adoption WITHOUT discovery broadcast.\n` +
@@ -179,14 +187,6 @@ async function main() {
         if (startAnswer.toLowerCase() !== 'yes') {
             console.log('Exiting program...');
             process.exit(0);
-        }
-
-        // Adjust startIndex to be 0-based for array indexing
-        const startIndexZeroBased = startIndex - 1;
-
-        if (startIndexZeroBased >= config.onvif.length) {
-            console.error(`Error: Start index ${startIndex} is greater than the number of cameras (${config.onvif.length})`);
-            process.exit(1);
         }
 
         console.log(`Starting from camera ${startIndex} of ${config.onvif.length}`);

@@ -151,8 +151,6 @@ async function main() {
             process.exit(1);
         }
 
-        console.log(`Starting from camera ${startIndex} of ${config.onvif.length}`);
-
         // Ask user if they want to start the sequential adoption process
         const startAnswer = await askQuestion(
             `This script will start each camera one by one for adoption.\n` +
@@ -165,6 +163,8 @@ async function main() {
             console.log('Exiting program...');
             process.exit(0);
         }
+
+        console.log(`Starting from camera ${startIndex} of ${config.onvif.length}`);
 
         // Process each camera sequentially, starting from the specified index
         for (let i = startIndexZeroBased; i < config.onvif.length; i++) {
