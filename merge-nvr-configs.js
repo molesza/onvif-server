@@ -7,6 +7,7 @@ const path = require('path');
 /**
  * Merges NVR configurations while preserving existing camera settings
  * and incrementally adding new ones with adjusted ports and MAC addresses.
+ * Ensures only one RTSP/Snapshot proxy port pair per target NVR.
  */
 function mergeNvrConfigs(combinedConfigPath, newConfigPath) {
     console.log(`Merging ${newConfigPath} into ${combinedConfigPath}...`);
@@ -24,59 +25,50 @@ function mergeNvrConfigs(combinedConfigPath, newConfigPath) {
         return;
     }
 
-    // Read the combined config file
+    // --- Read Configurations ---
     let combinedConfig;
     if (fs.existsSync(combinedConfigPath)) {
         console.log(`Reading existing combined config from ${combinedConfigPath}`);
-        const combinedConfigData = fs.readFileSync(combinedConfigPath, 'utf8');
-        combinedConfig = yaml.parse(combinedConfigData);
+        try {
+            const combinedConfigData = fs.readFileSync(combinedConfigPath, 'utf8');
+            combinedConfig = yaml.parse(combinedConfigData);
+            // Ensure combinedConfig.onvif is an array
+            if (!combinedConfig || typeof combinedConfig !== 'object') combinedConfig = { onvif: [] };
+            if (!Array.isArray(combinedConfig.onvif)) combinedConfig.onvif = [];
+        } catch (e) {
+            console.error(`Error parsing existing combined config ${combinedConfigPath}: ${e.message}`);
+            process.exit(1);
+        }
     } else {
         console.error(`Error: Combined config file ${combinedConfigPath} does not exist.`);
         console.error(`Please run the script first with 192.168.6.201.yaml to create the initial combined config.`);
         process.exit(1);
     }
 
-    // Read the new NVR config
     console.log(`Reading new NVR config from ${newConfigPath}`);
     const newConfigData = fs.readFileSync(newConfigPath, 'utf8');
     const newConfig = yaml.parse(newConfigData);
 
-    // Ensure the combined config has the onvif array
-    if (!combinedConfig.onvif || !Array.isArray(combinedConfig.onvif)) {
-        console.error('Error: Invalid combined config format. Missing onvif array.');
-        process.exit(1);
-    }
-
     // Ensure the new config has the onvif array
     if (!newConfig.onvif || !Array.isArray(newConfig.onvif)) {
-        console.error('Error: Invalid new config format. Missing onvif array.');
+        console.error('Error: Invalid new config format. Missing or invalid onvif array.');
         process.exit(1);
     }
 
-    // Find the highest server port, last MAC address, etc.
-    let highestServerPort = 8080; // Start with a base value
-    let highestRtspPort = 8553;   // Start with a base value
-    let highestSnapshotPort = 8579; // Start with a base value
+    // --- Analyze Existing Config for Highest Values and Proxy Ports Per NVR ---
+    let highestServerPort = 8080; // Start with a base value below expected range
     let highestMacSuffix = 0;     // For MAC addresses like a2:a2:a2:a2:a2:XX
+    const nvrProxyPorts = {}; // Stores { 'targetNVR': { rtsp: port, snapshot: port } }
+    let currentHighestRtspPort = 8553;   // Start below expected range
+    let currentHighestSnapshotPort = 8579; // Start below expected range
 
-    // Analyze existing cameras
     combinedConfig.onvif.forEach(camera => {
-        // Check server port
+        // Track highest server port
         if (camera.ports && camera.ports.server && camera.ports.server > highestServerPort) {
             highestServerPort = camera.ports.server;
         }
 
-        // Check RTSP port
-        if (camera.ports && camera.ports.rtsp && camera.ports.rtsp > highestRtspPort) {
-            highestRtspPort = camera.ports.rtsp;
-        }
-
-        // Check snapshot port
-        if (camera.ports && camera.ports.snapshot && camera.ports.snapshot > highestSnapshotPort) {
-            highestSnapshotPort = camera.ports.snapshot;
-        }
-
-        // Check MAC address suffix
+        // Track highest MAC suffix
         if (camera.mac) {
             const macParts = camera.mac.split(':');
             if (macParts.length === 6) {
@@ -86,54 +78,105 @@ function mergeNvrConfigs(combinedConfigPath, newConfigPath) {
                 }
             }
         }
+
+        // Track highest proxy ports and map them to NVRs
+        if (camera.target && camera.target.hostname && camera.ports && camera.ports.rtsp && camera.ports.snapshot) {
+            const targetNVR = camera.target.hostname;
+            const rtspPort = camera.ports.rtsp;
+            const snapshotPort = camera.ports.snapshot;
+
+            if (!nvrProxyPorts[targetNVR]) {
+                nvrProxyPorts[targetNVR] = { rtsp: rtspPort, snapshot: snapshotPort };
+                if (rtspPort > currentHighestRtspPort) {
+                    currentHighestRtspPort = rtspPort;
+                }
+                if (snapshotPort > currentHighestSnapshotPort) {
+                    currentHighestSnapshotPort = snapshotPort;
+                }
+            } else {
+                // Verify consistency if NVR already seen
+                if (nvrProxyPorts[targetNVR].rtsp !== rtspPort || nvrProxyPorts[targetNVR].snapshot !== snapshotPort) {
+                    console.warn(`Warning: Inconsistent proxy ports found for NVR ${targetNVR} in existing config. Using first found ports (${nvrProxyPorts[targetNVR].rtsp}, ${nvrProxyPorts[targetNVR].snapshot}).`);
+                }
+            }
+        }
     });
 
-    console.log(`Highest server port found: ${highestServerPort}`);
-    console.log(`Highest RTSP port found: ${highestRtspPort}`);
-    console.log(`Highest snapshot port found: ${highestSnapshotPort}`);
-    console.log(`Highest MAC suffix found: 0x${highestMacSuffix.toString(16)}`);
+    console.log(`Initial Highest server port found: ${highestServerPort}`);
+    console.log(`Initial Highest RTSP port found: ${currentHighestRtspPort}`);
+    console.log(`Initial Highest snapshot port found: ${currentHighestSnapshotPort}`);
+    console.log(`Initial Highest MAC suffix found: 0x${highestMacSuffix.toString(16)}`);
+    console.log(`Initial NVR Proxy Ports Map:`, nvrProxyPorts);
 
-    // Process new cameras and adjust their settings
-    const newCameras = newConfig.onvif.map((camera, index) => {
-        // Create a copy of the camera config
+    // --- Process New Cameras ---
+    const newCamerasToAdd = [];
+    let assignedNewRtspPort = -1;
+    let assignedNewSnapshotPort = -1;
+    let newNvrTarget = null; // Track the target NVR for the *current* new file
+
+    newConfig.onvif.forEach((camera, index) => {
+        // Create a deep copy
         const newCamera = JSON.parse(JSON.stringify(camera));
+        const targetNVR = newCamera.target?.hostname;
 
-        // Increment ports
+        if (!targetNVR) {
+            console.warn(`Skipping camera at index ${index} in ${newConfigPath} due to missing target hostname.`);
+            return; // Skip this camera
+        }
+
+        // **Assign Proxy Ports (RTSP/Snapshot) - Only once per new NVR target**
+        if (!nvrProxyPorts[targetNVR]) {
+            // This is the first time we see this target NVR in this merge operation
+            if (assignedNewRtspPort === -1) { // Only increment if we haven't assigned ports for this new file yet
+                currentHighestRtspPort++;
+                currentHighestSnapshotPort++;
+                assignedNewRtspPort = currentHighestRtspPort;
+                assignedNewSnapshotPort = currentHighestSnapshotPort;
+                newNvrTarget = targetNVR; // Remember which NVR these ports belong to
+                console.log(`Assigning new proxy ports for NVR ${targetNVR}: RTSP=${assignedNewRtspPort}, Snapshot=${assignedNewSnapshotPort}`);
+                nvrProxyPorts[targetNVR] = { rtsp: assignedNewRtspPort, snapshot: assignedNewSnapshotPort };
+            } else if (targetNVR !== newNvrTarget) {
+                // Error: The new config file contains cameras pointing to different target NVRs.
+                // This script currently assumes one target NVR per input file for simplicity in port assignment.
+                console.error(`Error: Configuration file ${newConfigPath} contains cameras pointing to different target NVRs (${newNvrTarget} and ${targetNVR}). Please ensure each input YAML file corresponds to only one target NVR.`);
+                process.exit(1);
+            }
+            // Assign the newly determined ports for this NVR
+            newCamera.ports.rtsp = assignedNewRtspPort;
+            newCamera.ports.snapshot = assignedNewSnapshotPort;
+        } else {
+            // Target NVR already exists in the combined config or was previously processed from this file
+            console.log(`Using existing proxy ports for NVR ${targetNVR}: RTSP=${nvrProxyPorts[targetNVR].rtsp}, Snapshot=${nvrProxyPorts[targetNVR].snapshot}`);
+            newCamera.ports.rtsp = nvrProxyPorts[targetNVR].rtsp;
+            newCamera.ports.snapshot = nvrProxyPorts[targetNVR].snapshot;
+        }
+
+        // **Assign Server Port and MAC Address - Unique per camera**
         highestServerPort++;
-        highestRtspPort++;
-        highestSnapshotPort++;
         highestMacSuffix++;
 
-        // Update ports
         newCamera.ports.server = highestServerPort;
-        newCamera.ports.rtsp = highestRtspPort;
-        newCamera.ports.snapshot = highestSnapshotPort;
 
-        // Update MAC address
         const macPrefix = 'a2:a2:a2:a2:a2';
-        const macSuffix = highestMacSuffix.toString(16).padStart(2, '0');
-        newCamera.mac = `${macPrefix}:${macSuffix}`;
+        const macSuffixHex = highestMacSuffix.toString(16).padStart(2, '0');
+        newCamera.mac = `${macPrefix}:${macSuffixHex}`;
 
-        // Keep the original UUID - no need to generate a new one
-        // The chance of UUID conflicts is practically zero
-
-        // Update name using NVR*-CH* format
-        const channelNumber = index + 1;
+        // **Assign Name**
+        const channelNumber = index + 1; // Use index from the *new* file
         newCamera.name = `NVR${nvrIpSuffix}-CH${channelNumber}`;
 
-        console.log(`Processed camera: ${newCamera.name} (Port: ${newCamera.ports.server}, MAC: ${newCamera.mac})`);
+        console.log(`Processed camera: ${newCamera.name} (Server Port: ${newCamera.ports.server}, RTSP Proxy Port: ${newCamera.ports.rtsp}, Snapshot Proxy Port: ${newCamera.ports.snapshot}, MAC: ${newCamera.mac})`);
 
-        return newCamera;
+        newCamerasToAdd.push(newCamera);
     });
 
-    // Add new cameras to the combined config
-    combinedConfig.onvif = combinedConfig.onvif.concat(newCameras);
+    // --- Combine and Write Output ---
+    combinedConfig.onvif = combinedConfig.onvif.concat(newCamerasToAdd);
 
-    // Write the combined config back to file
     console.log(`Writing combined config to ${combinedConfigPath}`);
-    fs.writeFileSync(combinedConfigPath, yaml.stringify(combinedConfig));
+    fs.writeFileSync(combinedConfigPath, yaml.stringify(combinedConfig, { indent: 2 })); // Added indentation
 
-    console.log(`Successfully merged ${newCameras.length} cameras from ${newConfigPath} into ${combinedConfigPath}`);
+    console.log(`Successfully merged ${newCamerasToAdd.length} cameras from ${newConfigPath} into ${combinedConfigPath}`);
     console.log(`Total cameras in combined config: ${combinedConfig.onvif.length}`);
 }
 
